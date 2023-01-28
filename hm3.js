@@ -1,11 +1,13 @@
 function sum(x) {
     let total = 0;
-    return function addToTotal(y) {
-        total += y;
+    return function closureSum(x) {
+        total += x;
         return total;
-    }
+    };
 }
 
-let add = sum(3);
-console.log(add(5))
-console.log(add(20))
+let addToTotal = sum();
+
+console.log(addToTotal(3));
+console.log(addToTotal(5));
+console.log(addToTotal(20));
