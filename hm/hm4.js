@@ -32,7 +32,7 @@ redirectToLinkBtn.addEventListener("click", function() {
     }
 });
 
-// создаем массив ссылок на изображения
+
 const images = [
     "https://gen.jut.su/uploads/preview/3/0/0/11/1013_1646643738.jpg",
     "https://i.ytimg.com/vi/OAwDLwtH08s/maxresdefault.jpg",
@@ -40,14 +40,14 @@ const images = [
     "https://digitalnomads.world/wp-content/uploads/2021/09/odessa-digital-nomads-1024x683.jpg",
 ];
 
-// получаем элемент img
+
 const img = document.getElementById("random-img");
 
-// выбираем случайную ссылку на изображение из массива
+
 const randomIndex = Math.floor(Math.random() * images.length);
 const randomImg = images[randomIndex];
 
-// устанавливаем выбранное изображение как src для элемента img
+
 img.src = randomImg;
 
 
