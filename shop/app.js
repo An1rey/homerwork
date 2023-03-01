@@ -1,0 +1,2 @@
+showCategories(DATA);
+makeFiltration();
